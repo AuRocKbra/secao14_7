@@ -29,7 +29,7 @@ public class Programa {
 			Double preco = sc.nextDouble();
 			switch(tipoProduto.toUpperCase()) {
 				case "I":
-					System.out.print("Taxa de importação:");
+					System.out.print("Taxa de importação: R$");
 					sc.nextLine();
 					Double taxaImportacao = sc.nextDouble();
 					ProdutoImportado produtoImportado = new ProdutoImportado(nomeProduto, preco, taxaImportacao);

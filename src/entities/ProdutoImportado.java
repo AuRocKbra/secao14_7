@@ -22,6 +22,6 @@ public class ProdutoImportado extends Produto{
 	
 	@Override
 	public String tagPreco() {
-		return "Nome:"+this.getNomeProduto()+"\nPreço sem taxa: R$"+String.format("%.2f",this.getPreco())+"\nValor total: R$"+String.format("%.2f",this.getPreco()+(this.getTaxaDeImportacao()*this.getPreco()))+"\n";
+		return "Nome:"+this.getNomeProduto()+"\nPreço sem taxa: R$"+String.format("%.2f",this.getPreco())+"\nValor total: R$"+String.format("%.2f",this.getPreco()+this.getTaxaDeImportacao())+"\n";
 	}
 }
